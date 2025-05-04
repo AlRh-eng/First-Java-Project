@@ -26,7 +26,7 @@ public class Calculator {
   
     }
 
-// the code below is the code in the app folder which is seperate from the calculations folder 
+// the code below is the code in the app folder which is seperate from the calculations folder  
 
 // public class App {
     public static void main(String[] args) throws Exception {
