@@ -1,0 +1,46 @@
+import java.awt.*;
+import java.awt.event.*; 
+import java.util.Arrays;
+import javax.swing.*;
+import javax.swing.border.LineBorder; 
+
+public class Calculator {   
+    
+     int boardWidth = 360;
+     int boardHeight = 540; 
+
+     Color customOffWhite = new Color(240, 240, 240);
+     Color customTrueBlue = new Color(1, 128, 204);
+     Color customNonPhotoBlue = new Color(155, 232, 240);
+     Color customCobaltBlue = new Color(3, 87, 175);
+     
+     JFrame frame = new JFrame("Calculator"); 
+     JLabel displayLabel = new JLabel();
+     JPanel displayPanel = new JPanel();
+
+
+     Calculator(){
+
+         frame.setVisible(true);
+         frame.setSize(boardWidth, boardHeight);
+         frame.setLocationRelativeTo(null);
+         frame.setResizable(true);
+         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+         frame.setLayout(new BorderLayout());
+
+         displayLabel.setBackground(customOffWhite);
+         displayLabel.setForeground(Color.black);
+         displayLabel.setFont(new Font("helvetica", Font.PLAIN, 80));
+         displayLabel.setHorizontalAlignment(JLabel.RIGHT);
+         displayLabel.setText("0");
+         displayLabel.setOpaque(true);
+
+         displayPanel.setLayout(new BorderLayout());
+         displayPanel.add(displayLabel);
+         frame.add(displayPanel);
+
+
+     }
+  
+    }
+
