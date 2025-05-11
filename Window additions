@@ -11,7 +11,7 @@
          displayLabel.setForeground(Color.black);
          displayLabel.setFont(new Font("helvetica", Font.PLAIN, 80));
          displayLabel.setHorizontalAlignment(JLabel.RIGHT);
-         displayLabel.setText("0");
+         displayLabel.setText("0"); 
          displayLabel.setOpaque(true);
 
          displayPanel.setLayout(new BorderLayout());
